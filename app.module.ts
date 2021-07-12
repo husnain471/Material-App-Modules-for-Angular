@@ -14,16 +14,23 @@ import { FormsModule } from '@angular/forms';
 import {MatSliderModule } from '@angular/material/slider';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import { AppbarComponent } from './appbar/appbar.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import { MaincontentComponent } from './maincontent/maincontent.component';
+import { AppRoutingModule } from './app-routing.module';
+import { FormsoptionsComponent } from './formsoptions/formsoptions.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppbarComponent,
+    ToolbarComponent,
+    MaincontentComponent,
+    FormsoptionsComponent,
   ],
   imports: [
     BrowserModule,
     MatSliderModule,
+    MatTabsModule,
     MatDatepickerModule,
     MatSlideToggleModule,
     BrowserAnimationsModule,
@@ -34,7 +41,8 @@ import { AppbarComponent } from './appbar/appbar.component';
     MatButtonModule,
     MatDialogModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
